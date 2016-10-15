@@ -29,7 +29,7 @@
         android:textSize="22sp" />
 
     <TextView
-        android:text="I am the most brilliant man of my generation, but youprobably should have went to that prep class - Kanye"
+        android:text="I am the most brilliant man of my generation, but you probably should have went to that prep class - Kanye"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
