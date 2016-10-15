@@ -3,6 +3,7 @@ package team11.team11project;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -18,6 +19,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+
+import layout.Goals;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "You have new questions available.", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -88,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+
     /**
      * A placeholder fragment containing a simple view.
      */
@@ -101,6 +106,8 @@ public class MainActivity extends AppCompatActivity {
         public PlaceholderFragment() {
         }
 
+
+
         /**
          * Returns a new instance of this fragment for the given section
          * number.
@@ -112,6 +119,8 @@ public class MainActivity extends AppCompatActivity {
             fragment.setArguments(args);
             return fragment;
         }
+
+
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -131,9 +140,10 @@ public class MainActivity extends AppCompatActivity {
                View rootView = inflater.inflate(R.layout.fragment_community, container, false);
                return rootView;
            }
-
         }
     }
+
+
 
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
