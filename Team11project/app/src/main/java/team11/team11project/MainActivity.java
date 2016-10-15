@@ -116,10 +116,22 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
-            return rootView;
+
+
+           if(getArguments().getInt(ARG_SECTION_NUMBER)==1) {
+               View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+               return rootView;
+           }else  if(getArguments().getInt(ARG_SECTION_NUMBER)==2) {
+                    View rootView = inflater.inflate(R.layout.fragment_community, container, false);
+                    return rootView;
+           }else  if(getArguments().getInt(ARG_SECTION_NUMBER)==3) {
+               View rootView = inflater.inflate(R.layout.fragment_goals, container, false);
+               return rootView;
+           }else {
+               View rootView = inflater.inflate(R.layout.fragment_questions, container, false);
+               return rootView;
+           }
+
         }
     }
 
