@@ -122,13 +122,13 @@ public class MainActivity extends AppCompatActivity {
                View rootView = inflater.inflate(R.layout.fragment_main, container, false);
                return rootView;
            }else  if(getArguments().getInt(ARG_SECTION_NUMBER)==2) {
-                    View rootView = inflater.inflate(R.layout.fragment_community, container, false);
+                    View rootView = inflater.inflate(R.layout.fragment_goals, container, false);
                     return rootView;
            }else  if(getArguments().getInt(ARG_SECTION_NUMBER)==3) {
-               View rootView = inflater.inflate(R.layout.fragment_goals, container, false);
+               View rootView = inflater.inflate(R.layout.fragment_questions, container, false);
                return rootView;
            }else {
-               View rootView = inflater.inflate(R.layout.fragment_questions, container, false);
+               View rootView = inflater.inflate(R.layout.fragment_community, container, false);
                return rootView;
            }
 
