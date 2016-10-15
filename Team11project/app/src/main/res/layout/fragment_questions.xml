@@ -66,6 +66,16 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <RadioButton
+        android:text="Sleep All Night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton4"
+        android:layout_alignBaseline="@+id/radioButton3"
+        android:layout_alignBottom="@+id/radioButton3"
+        android:layout_alignLeft="@+id/radioButton2"
+        android:layout_alignStart="@+id/radioButton2" />
+
     <TextView
         android:text="Chris Has a Test tomarow and is panicing what should he do?"
         android:layout_width="wrap_content"
@@ -76,16 +86,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <RadioButton
-        android:text="Sleep All Night"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioButton4"
-        android:layout_alignBaseline="@+id/radioButton3"
-        android:layout_alignBottom="@+id/radioButton3"
-        android:layout_alignLeft="@+id/radioButton2"
-        android:layout_alignStart="@+id/radioButton2" />
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="24sp" />
 
 </RelativeLayout>
